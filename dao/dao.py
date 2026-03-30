@@ -6,7 +6,7 @@ from gestionale.core.prodotto import ProdottoRecord
 
 
 class DAO:
-
+    @staticmethod
     def getAllProdotti(self):
         # cnx = mysql.connector.connect(
         #     user = "root",
@@ -28,6 +28,7 @@ class DAO:
         cnx.close()
         return res
 
+    @staticmethod
     def getAllClienti(self):
         # cnx = mysql.connector.connect(
         #     user = "root",
@@ -49,6 +50,7 @@ class DAO:
         cnx.close()
         return res
 
+    @staticmethod
     def addProdotto(self, prodotto):
         # cnx = mysql.connector.connect(
         #     user = "root",
@@ -69,6 +71,7 @@ class DAO:
         cnx.close()
         return
 
+    @staticmethod
     def addCliente(self, cliente):
         # cnx = mysql.connector.connect(
         #     user = "root",
@@ -90,6 +93,7 @@ class DAO:
         cnx.close()
         return
 
+    @staticmethod
     def hasCliente(self, cliente):
         # cnx = mysql.connector.connect(
         #     user = "root",
@@ -108,6 +112,7 @@ class DAO:
         cnx.close()
         return len(row) > 0
 
+    @staticmethod
     def hasProdotto(self, prod):
         # cnx = mysql.connector.connect(
         #     user = "root",
